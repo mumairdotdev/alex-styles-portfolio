@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Styles - Graphic Designer Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="cursor"></div>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">Alex<span>Styles</span></a>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home" class="active" data-tooltip="Home">Home</a></li>
+                    <li><a href="#about" data-tooltip="Learn about me">About</a></li>
+                    <li><a href="#portfolio" data-tooltip="See my work">Portfolio</a></li>
+                    <li><a href="#contact" data-tooltip="Get in touch">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="animate-text">Hello, I'm <span>Alex Styles</span></h1>
+                    <h2 class="animate-text delay-1">Creative Graphic Designer</h2>
+                    <p class="animate-text delay-2">Crafting engaging visual experiences that tell compelling stories</p>
+                    <div class="btn-container animate-text delay-3">
+                        <a href="#portfolio" class="btn primary-btn">View My Work</a>
+                        <a href="#contact" class="btn secondary-btn">Let's Talk</a>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <span>Scroll Down</span>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-grid">
+                    <div class="about-image">
+                        <div class="image-container">
+                            <!-- Placeholder for profile image -->
+                            <div class="profile-img"></div>
+                        </div>
+                    </div>
+                    <div class="about-content">
+                        <h3>Creative Designer with a Passion for Visual Storytelling</h3>
+                        <p>Hello! I'm Alex Styles, a graphic designer with over 5 years of experience in creating visual solutions that communicate ideas and captivate audiences. My approach combines creativity, strategic thinking, and attention to detail to deliver designs that not only look great but also achieve specific objectives.</p>
+                        <p>After earning my degree in Graphic Design from the Art Institute of Design, I've worked with clients across various industries, from startups to established brands, helping them stand out in today's visually competitive landscape.</p>
+                        <div class="skills">
+                            <h4>My Skills</h4>
+                            <div class="skill-bars">
+                                <div class="skill">
+                                    <span class="skill-name">Graphic Design</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-level" style="width: 95%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill">
+                                    <span class="skill-name">UI/UX Design</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-level" style="width: 85%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill">
+                                    <span class="skill-name">Brand Identity</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-level" style="width: 90%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill">
+                                    <span class="skill-name">Motion Graphics</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-level" style="width: 75%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#portfolio" class="btn primary-btn">View My Work</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="portfolio">
+            <div class="container">
+                <h2 class="section-title">Portfolio</h2>
+                <div class="portfolio-filter">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="branding">Branding</button>
+                    <button class="filter-btn" data-filter="web">Web Design</button>
+                    <button class="filter-btn" data-filter="print">Print</button>
+                    <button class="filter-btn" data-filter="illustration">Illustration</button>
+                </div>
+                <div class="portfolio-grid">
+                    <!-- Project 1 -->
+                    <div class="portfolio-item" data-category="branding">
+                        <div class="portfolio-img">
+                            <img src="assets/images/portfolio-placeholder-1.jpg" alt="Eco Branding Project">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-info">
+                                    <h3>Eco Branding</h3>
+                                    <p>Brand Identity</p>
+                                    <a href="#" class="view-project" data-project="project1">View Project</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project 2 -->
+                    <div class="portfolio-item" data-category="web">
+                        <div class="portfolio-img">
+                            <img src="assets/images/portfolio-placeholder-2.jpg" alt="Modern Web Design Project">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-info">
+                                    <h3>Tech Startup Website</h3>
+                                    <p>Web Design</p>
+                                    <a href="#" class="view-project" data-project="project2">View Project</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project 3 -->
+                    <div class="portfolio-item" data-category="print">
+                        <div class="portfolio-img">
+                            <img src="assets/images/portfolio-placeholder-3.jpg" alt="Magazine Layout Project">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-info">
+                                    <h3>Lifestyle Magazine</h3>
+                                    <p>Print Design</p>
+                                    <a href="#" class="view-project" data-project="project3">View Project</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project 4 -->
+                    <div class="portfolio-item" data-category="illustration">
+                        <div class="portfolio-img">
+                            <img src="assets/images/portfolio-placeholder-4.jpg" alt="Character Illustration Project">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-info">
+                                    <h3>Character Series</h3>
+                                    <p>Illustration</p>
+                                    <a href="#" class="view-project" data-project="project4">View Project</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project 5 -->
+                    <div class="portfolio-item" data-category="branding">
+                        <div class="portfolio-img">
+                            <img src="assets/images/portfolio-placeholder-5.jpg" alt="Coffee Shop Branding Project">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-info">
+                                    <h3>Coffee Shop Rebrand</h3>
+                                    <p>Brand Identity</p>
+                                    <a href="#" class="view-project" data-project="project5">View Project</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project 6 -->
+                    <div class="portfolio-item" data-category="web">
+                        <div class="portfolio-img">
+                            <img src="assets/images/portfolio-placeholder-6.jpg" alt="E-commerce Design Project">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-info">
+                                    <h3>Fashion E-commerce</h3>
+                                    <p>Web Design</p>
+                                    <a href="#" class="view-project" data-project="project6">View Project</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Modal -->
+            <div class="project-modal">
+                <div class="modal-container">
+                    <div class="modal-close">&times;</div>
+                    <div class="modal-content">
+                        <!-- Modal content will be dynamically inserted -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title">Get in Touch</h2>
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h3>Let's Create Something Amazing Together</h3>
+                        <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+                        
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <span>hello@alexstyles.com</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <span>+1 (555) 123-4567</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>San Francisco, CA</span>
+                            </div>
+                        </div>
+                        
+                        <div class="social-links">
+                            <a href="#" class="social-link"><i class="fab fa-behance"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-dribbble"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="subject" name="subject" placeholder="Subject">
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                            </div>
+                            <button type="submit" class="btn primary-btn">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="index.html">Alex<span>Styles</span></a>
+                </div>
+                <p>&copy; 2025 Alex Styles. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Project modal templates (hidden) -->
+    <template id="project1-template">
+        <div class="modal-project">
+            <h2>Eco Branding Project</h2>
+            <div class="project-images">
+                <img src="assets/images/project1-detail-1.jpg" alt="Eco Branding - Logo">
+                <img src="assets/images/project1-detail-2.jpg" alt="Eco Branding - Stationery">
+                <img src="assets/images/project1-detail-3.jpg" alt="Eco Branding - Packaging">
+            </div>
+            <div class="project-description">
+                <p>A comprehensive branding project for an eco-friendly product line. The design approach focused on sustainable aesthetics while maintaining a premium feel. The color palette draws from nature, complemented by minimalist typography and organic shapes.</p>
+                <h3>Project Scope</h3>
+                <ul>
+                    <li>Brand Identity Design</li>
+                    <li>Packaging System</li>
+                    <li>Marketing Materials</li>
+                    <li>Style Guide</li>
+                </ul>
+            </div>
+        </div>
+    </template>
+    <!-- Additional project templates would follow the same pattern -->
+
+    <script src="js/main.js"></script>
+</body>
+</html>

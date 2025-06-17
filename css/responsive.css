@@ -1,0 +1,318 @@
+/* 
+===========================================
+   ALEX STYLES - RESPONSIVE CSS
+   Activity 2: Responsive Design
+===========================================
+*/
+
+/* ---- MEDIA QUERIES ---- */
+
+/* Large Desktops (1200px and above) */
+@media screen and (min-width: 1201px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+/* Desktop Screens (1025px to 1200px) */
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+    
+    h1 {
+        font-size: 3rem;
+    }
+    
+    h2 {
+        font-size: 2.25rem;
+    }
+    
+    .portfolio-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Tablets and Small Desktops (768px to 1024px) */
+@media screen and (max-width: 1024px) {
+    html {
+        font-size: 15px;
+    }
+    
+    .container {
+        max-width: 720px;
+    }
+    
+    h1 {
+        font-size: 2.75rem;
+    }
+    
+    h2 {
+        font-size: 2rem;
+    }
+    
+    h3 {
+        font-size: 1.5rem;
+    }
+    
+    /* Header & Navigation */
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 70%;
+        height: 100vh;
+        background-color: white;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: right var(--transition-medium);
+        box-shadow: var(--shadow-large);
+        z-index: 1001;
+        gap: var(--space-lg);
+    }
+    
+    .nav-links.active {
+        right: 0;
+    }
+    
+    .nav-links li a {
+        font-size: 1.2rem;
+    }
+    
+    .hamburger {
+        display: block;
+        z-index: 1002;
+    }
+    
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    
+    /* About Section */
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-lg);
+    }
+    
+    .image-container {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    
+    /* Portfolio Section */
+    .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* Contact Section */
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-lg);
+    }
+    
+    .contact-info {
+        text-align: center;
+    }
+    
+    .contact-item {
+        justify-content: center;
+    }
+    
+    .social-links {
+        justify-content: center;
+    }
+}
+
+/* Mobile Devices (max-width: 767px) */
+@media screen and (max-width: 767px) {
+    html {
+        font-size: 14px;
+    }
+    
+    .container {
+        max-width: 100%;
+        padding: 0 var(--space-sm);
+    }
+    
+    h1 {
+        font-size: 2.25rem;
+    }
+    
+    h2 {
+        font-size: 1.75rem;
+    }
+    
+    h3 {
+        font-size: 1.3rem;
+    }
+    
+    section {
+        padding: var(--space-lg) 0;
+    }
+    
+    /* Header */
+    .logo a {
+        font-size: 1.5rem;
+    }
+    
+    /* Hero Section */
+    .hero h1 {
+        font-size: 2.25rem;
+    }
+    
+    .hero h2 {
+        font-size: 1.3rem;
+    }
+    
+    .hero p {
+        font-size: 1rem;
+    }
+    
+    .btn-container {
+        flex-direction: column;
+        gap: var(--space-sm);
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    /* Portfolio Section */
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .portfolio-filter {
+        flex-wrap: wrap;
+        gap: var(--space-xs);
+    }
+    
+    .filter-btn {
+        font-size: 0.9rem;
+        padding: var(--space-xxs) var(--space-xs);
+    }
+    
+    /* Project Modal */
+    .modal-container {
+        width: 95%;
+    }
+    
+    .modal-content {
+        padding: var(--space-md);
+    }
+    
+    .project-images {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Small Mobile Devices (max-width: 480px) */
+@media screen and (max-width: 480px) {
+    .nav-links {
+        width: 100%;
+    }
+    
+    .section-title {
+        font-size: 1.75rem;
+    }
+    
+    .hero-content {
+        padding: 0 var(--space-sm);
+    }
+    
+    /* About Section */
+    .about-content h3 {
+        font-size: 1.3rem;
+    }
+    
+    /* Form Elements */
+    input, textarea {
+        padding: var(--space-xs);
+    }
+    
+    /* Modal Close Button */
+    .modal-close {
+        top: var(--space-xs);
+        right: var(--space-xs);
+    }
+}
+
+/* Landscape Orientation for Mobile */
+@media (max-height: 500px) and (orientation: landscape) {
+    .hero {
+        height: auto;
+        min-height: 100vh;
+        padding: 6rem 0;
+    }
+    
+    .hero-content {
+        padding: var(--space-md) 0;
+    }
+    
+    .scroll-indicator {
+        display: none;
+    }
+    
+    .nav-links {
+        padding: var(--space-md) 0;
+    }
+}
+
+/* Support for High-Resolution Displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    /* Optimize images for high-res displays */
+    .portfolio-img img {
+        will-change: transform;
+    }
+}
+
+/* Print Styles */
+@media print {
+    header, footer, .hero, .contact, .portfolio-filter, .social-links, .btn {
+        display: none;
+    }
+    
+    body {
+        font-size: 12pt;
+        color: black;
+        background: white;
+    }
+    
+    .about, .portfolio {
+        page-break-inside: avoid;
+    }
+    
+    a {
+        text-decoration: underline;
+        color: #000;
+    }
+    
+    .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .portfolio-overlay {
+        display: none;
+    }
+}
+
+/* For Reduced Motion Preference */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+    
+    .scroll-indicator {
+        animation: none;
+    }
+}
